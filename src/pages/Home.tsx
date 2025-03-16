@@ -1,9 +1,11 @@
-import { Button } from "@/components/Button";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/Button"
+import colours from "@/colours";
 
 function Home() {
   return (
-    <div className="h-screen w-screen bg-gray-100 flex items-center justify-center">
-      <Button variant="default" size="sm">test</Button>
+    <div className={cn("h-screen w-screen flex items-center justify-center", `bg-[${colours.normal}]`)}>
+      <Button colour="informative">test</Button>
     </div>
   );
 }
