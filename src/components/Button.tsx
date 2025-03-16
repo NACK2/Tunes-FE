@@ -1,7 +1,7 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import colours from "@/colours";
+import colors from "@/colors";
 
 const buttonVariants = cva(
   "font-mono inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
@@ -27,26 +27,26 @@ const buttonVariants = cva(
         lg: "h-12 rounded-md px-8 has-[>svg]:px-4",
         icon: "size-9",
       },
-      colour: {
-        default: `bg-[${colours.normal}]`,
-        informative: `bg-[${colours.informative}]`,
-        alert: `bg-[${colours.alert}]`,
-        success: `bg-[${colours.success}]`,
+      color: {
+        default: colors.normal,
+        informative: colors.informative,
+        alert: colors.alert,
+        success: colors.success,
       },
     },
     defaultVariants: {
       variant: "default",
       size: "default",
-      colour: "default",
+      color: "default",
     },
   }
 );
 
-function Button({ className, variant, colour, size, ...props }: buttonProps) {
+function Button({ className, color, variant, size, ...props }: buttonProps) {
   return (
     <button
       data-slot="button"
-      className={cn(buttonVariants({ className, variant, colour, size }))}
+      className={cn(buttonVariants({ className, color, variant, size }))}
       {...props}
     />
   );

@@ -1,16 +1,16 @@
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/Button";
-import colours from "@/colours";
+import colors from "@/colors";
 
 function Home() {
   return (
     <div
       className={cn(
         "h-screen w-screen flex items-center justify-center",
-        `bg-[${colours.normal}]`
+        colors.normal
       )}
     >
-      <Button size="lg" colour="informative" className="text-xl">
+      <Button size="lg" color="informative" className="text-xl">
         Log In
       </Button>
     </div>
