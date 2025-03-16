@@ -51,7 +51,7 @@ function Button({ className, color, variant, size, ...props }: buttonProps) {
     />
   );
 }
- 
+
 type buttonProps = React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants>;
 
