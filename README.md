@@ -4,4 +4,4 @@
 - ```npm install```
 
 ## Documentation
-- Component library is built using [Shadcn](https://ui.shadcn.com/)
+- All components are built using [Shadcn](https://ui.shadcn.com/) (Shadcn is NOT a component library; it's a component _building_ library)
